@@ -1,56 +1,55 @@
 import { Title, SimpleGrid, Text, Button, ThemeIcon, Grid, rem } from '@mantine/core';
-import { IconCloudComputing, IconPill, IconMessages, IconDental } from '@tabler/icons-react';
+import { IconHammer,IconDiamond,IconUserCircle, IconLock } from '@tabler/icons-react';
 import { Link } from 'react-router-dom';
 import classes from './FeaturesTitle.module.css';
 
 const features = [
   {
-    icon: IconDental,
-    title: 'Remote Monitoring',
-    description: 'Monitor patients vital signs and health metrics remotely. This is particularly useful for managing chronic conditions or post-operative care.',
+    icon: IconDiamond,
+    title: 'Exquisite Jewelry',
+    description: 'Explore our stunning collection of fine jewelry crafted with the finest precious metals and rare gemstones.',
   },
   {
-    icon: IconCloudComputing,
-    title: 'Virtual Consultations',
-    description: ' Patients can have real-time video or audio consultations with healthcare providers, allowing them to discuss medical concerns, receive diagnoses, and get treatment recommendations.',
+    icon: IconHammer,
+    title: 'Expert Craftsmanship',
+    description: 'Each piece in our collection is meticulously crafted by skilled artisans, ensuring exceptional quality and beauty.',
   },
   {
-    icon: IconPill,
-    title: 'Digital Prescriptions',
+    icon: IconUserCircle,
+    title: 'Personalized Service',
     description:
-      ' Healthcare professionals can electronically prescribe medications, making it convenient for patients to obtain necessary drugs without visiting a physical pharmacy.',
+      'Receive personalized assistance from our knowledgeable staff to find the perfect piece that matches your style and preferences.',
   },
   {
-    icon: IconMessages,
-    title: 'Secure Communication',
+    icon: IconLock,
+    title: 'Secure Transactions',
     description:
-      'Prioritize the security and privacy of patient information, ensuring compliance with healthcare regulations. Secure messaging and video conferencing tools protect the confidentiality of medical discussions.',
+      'Shop with confidence knowing that your transactions are safe and secure, with encrypted payment methods and data protection measures.',
   },
- 
 ];
 
 export function FeaturesTitle() {
   const items = features.map((feature) => (
-    <div key={feature.title}>
+    <div  key={feature.title}>
       <ThemeIcon
         size={44}
         radius="md"
         variant="gradient"
-        gradient={{ deg: 133, from: 'blue', to: 'cyan' }}
+        gradient={{ deg: 133, from: '#000', to: '#000'}} // Gold gradient
       >
         <feature.icon style={{ width: rem(26), height: rem(26) }} stroke={1.5} />
       </ThemeIcon>
-      <Text fz="lg" mt="sm" fw={500}>
+      <Text style={{textAlign:'left'}} fz="lg" mt="sm" fw={500} c="#333"> {/* Dark text color */}
         {feature.title}
       </Text>
-      <Text c="dimmed" fz="sm">
+      <Text style={{textAlign:'left'}} c="dimmed" fz="sm">
         {feature.description}
       </Text>
     </div>
   ));
 
   return (
-    <div className={classes.wrapper}>
+    <div style={{margin:'4px'}} className={classes.wrapper}>
       <Grid gutter={80}>
 
 
@@ -63,25 +62,19 @@ export function FeaturesTitle() {
         </Grid.Col>
 
         <Grid.Col span={{ base: 12, md: 5 }} >
-          <Title className={classes.title} order={2}>
-          Book hassle-free online doctor appointments. <br/>
-          
+          <Title style={{color:'gold'}} className={classes.title} order={2} c="#333"> {/* Dark title color */}
+          Luxury Precious Metals & Gemstones. {/* Updated title */}
           </Title>
-          <Text c="dimmed" >
-          Online doctor consultation from the comfort of your home. 
-          Find and book appointment with doctors near you.
-          <br/>Welcome to InstaMedi, your comprehensive telehealth 
-          platform. We bring quality healthcare to your fingertips, making it 
-          easy and convenient to connect with experienced doctors from the 
-          comfort of your home.
-          <br/>Diverse Specialties:
-From primary care to specialized consultations, InstaMedi offers a wide array of medical specialties. Whether you need routine check-ups or expert advice, our platform connects you with healthcare professionals tailored to your specific needs.
-<br/>
+          <Text style={{textAlign:'left'}} c="dimmed" >
+          Welcome to your premier destination for exquisite precious metals and rare gemstones. Discover a world of luxury and elegance as you explore our stunning collection of gold, silver, red mercury, and diamonds.
 
+<br/>Elevate Your Style: Whether you're seeking timeless elegance or modern sophistication, our curated selection of precious metals and gemstones offers something for every taste and occasion.
 
-Prescriptions and Follow-Up Care:
-Beyond consultations, InstaMedi facilitates the prescription process and ensures continuity of care with follow-up appointments. Your health journey is seamlessly integrated into our platform.
-          </Text>
+Unrivaled Quality: We pride ourselves on offering only the highest quality gold, silver, red mercury, and diamonds. Each piece in our collection is meticulously crafted to perfection, ensuring lasting beauty and value.
+
+Expert Guidance: Our team of experienced professionals is here to assist you every step of the way. From selecting the perfect piece to answering your questions about precious metals and gemstones, we're dedicated to providing unparalleled customer service.
+
+Secure Transactions: Shop with confidence knowing that your transactions are safe and secure.      </Text>
 
         </Grid.Col>
 

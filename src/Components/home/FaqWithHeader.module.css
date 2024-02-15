@@ -6,7 +6,7 @@
   .header {
     height: rem(400px);
     padding-top: var(--mantine-spacing-md);
-    background-image: url("https://i.pinimg.com/564x/a2/0e/ec/a20eec4f2071b7da2019e243364846ed.jpg"),  linear-gradient(
+    background-image: url("https://media.istockphoto.com/id/493623498/photo/gold-bar-and-diamonds.jpg?s=612x612&w=0&k=20&c=bSn1j1begb71Q33IyKmIiyFgEgbf1NbQ7gGqj63X88I="),  linear-gradient(
       135deg,
       var(--mantine-color-blue-4) 0%,
       var(--mantine-color-blue-6) 100%

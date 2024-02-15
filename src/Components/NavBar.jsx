@@ -1,28 +1,26 @@
+// NavBar.js
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 function NavBar() {
   return (
-    <>
-      <div id="nav-bar" className="flex justify-between items-center p-4 bg-gray-100">
-
-        <div id="nav-logo" className="flex items-center">
-          <Link to='/'><img src=".\public\logo2.jpg" alt="InstaMedi's Logo" className="h-8" /></Link>
+    <nav className="navbar">
+      <div className="container">
+        <div className="nav-logo">
+          <Link to='/'>
+            <img src="./public/tt.png" alt="InstaMedi's Logo" className="logo" />
+          </Link>
         </div>
-
-        <div id="nav-links" className="hidden md:flex items-center space-x-4">
-          <ul id="links" className="flex space-x-4">
+        <div className="nav-links">
+          <ul>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='providers'>GetDoctor</Link></li>
-            <li><Link to='services'>Services</Link></li>
-            <li><Link to='contactcard'>FAQS</Link></li>
+             <li><Link to='/services'>Product</Link></li>
+            <li><Link to='/providers'>Contact</Link></li>
           </ul>
         </div>
-
-        
-
       </div>
-    </>
+    </nav>
   );
 }
 

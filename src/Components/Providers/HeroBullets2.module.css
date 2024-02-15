@@ -1,3 +1,43 @@
+.root {
+  display: flex;
+}
+
+.textGrid {
+  flex: 1;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.imageGrid {
+  flex: 1;
+  background-size: cover;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  max-width: 480px;
+}
+
+.title {
+  color: var(--mantine-color-black);
+  font-family: Greycliff CF, var(--mantine-font-family);
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+}
+
 .inner {
     display: flex;
     justify-content: space-between;
@@ -48,4 +88,7 @@
     background-color: var(--mantine-color-blue-light);
     border-radius: var(--mantine-radius-sm);
     padding: rem(4px) rem(12px);
+  }
+  body{
+    margin: 0px;
   }

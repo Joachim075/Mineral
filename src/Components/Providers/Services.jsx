@@ -12,7 +12,7 @@ function Services() {
            <HeroImageRight/>
            <ArticlesCardsGrid/>
            <FeaturesGrid/>
-          
+          <GridAsymmetrical/>
            
            
         </>

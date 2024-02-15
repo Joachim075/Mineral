@@ -1,43 +1,49 @@
 import { Container, Title, Text, Button } from '@mantine/core';
 import classes from './HeroBullets2.module.css';
+import { Link } from 'react-router-dom'; 
 
 export function HeroBullets2() {
   return (
-    <div className={classes.root} style={{ backgroundImage: `url(${'https://i.pinimg.com/564x/69/ae/9d/69ae9ddef4631a407efe8de462a19d66.jpg'})` }}>
-      <Container size="lg">
-        <div className={classes.inner}>
-          <div className={classes.content}>
-            <Title className={classes.title}>
-             {' '}
-              <Text
-                component="span"
-                inherit
-                variant="gradient"
-                gradient={{ from: 'blue', to: 'blue' }}
-              >
-                A Health Team  of Medical Professionals
-              </Text>{' '}
-             
-            </Title>
+    <div style={{background:'black', margin:'0'}} className={`${classes.root} ${classes.heroContainer}`}>
+      <div className={classes.textGrid}>
+        <Container size="lg">
+          <div className={classes.inner}>
+            <div className={classes.content}>
+              <Title className={classes.title}>
+                {' '}
+                <Text
+                  component="span"
+                  inherit
+                  variant="gradient"
+                  gradient={{ from: '#FFD700', to: '#FFA500' }} // Gold gradient
+                >
+                  Mineral Exporters, Suppliers, Wholesalers and Distributors
+                </Text>{' '}
+              </Title>
 
-            <Text className={classes.description} mt={30} fw={700}>
-  Tap on the arrow to get Links to suitable meet mode. <br />
-  1. For Phone calls and WhatsApp use mobile No. <br />
-  2. For video Meet tap on the Google Meet Link to join.
-</Text>
+              <Text style={{textAlign:'left'}} className={classes.description} mt={30} fw={700}>
+                Embark on an adventure to unearth rare treasures and precious metals. <br />
+                Connecting Global Markets with Premium Minerals.<br />
+                Facilitating Seamless Transactions: Buying and Selling Minerals.<br />
+                Globalizing Mineral Commerce: Your Gateway to Borderless Trade.
+              </Text>
 
-            <Button
-              variant="gradient"
-              gradient={{ from: 'pink', to: 'yellow' }}
-              size="xl"
-              className={classes.control}
-              mt={40}
-            >
-              Get started
-            </Button>
+              <Link to="/services" target='_self'> {/* Link wraps around the entire block */}
+  <Button
+    variant="gradient"
+    style={{ background: '#FFD700', color: '#000' }} // Gold color
+    size="xl"
+    className={classes.control}
+    mt={40}
+  >
+    Explore Now
+  </Button>
+</Link>
+            </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
+      <div className={`${classes.imageGrid} ${classes.heroContainer}`} style={{ backgroundImage: `url('https://media.istockphoto.com/id/544487916/photo/big-gold-nugget.jpg?s=612x612&w=0&k=20&c=UALXnaC-aiLFZU6nfLWsc0TvNYjZyh9PhKf6M14OQF4=')` }}></div>
     </div>
   );
 }

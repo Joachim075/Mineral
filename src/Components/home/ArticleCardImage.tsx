@@ -6,14 +6,14 @@ export function ArticleCardImage() {
     <Paper shadow="md" p="xl" radius="md" className={classes.card}>
       <div>
         <Text className={classes.category} size="xs">
-          INSTAMEDIC
+          MINERALS
         </Text>
         <Title order={3} className={classes.title} >
-          Best Ooctors at your finger tips.
+         World Treasures.
         </Title>
       </div>
       <Button variant="white" color="dark">
-      Best Ooctors at your finger tips.
+      World Treasures.
       </Button>
     </Paper>
   );

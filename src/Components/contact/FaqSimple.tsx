@@ -14,8 +14,9 @@ export function FaqSimple() {
 
       <Accordion variant="separated">
         <Accordion.Item className={classes.item} value="reset-password">
-          <Accordion.Control>Apart from removing my tooth is there a way to save the pain and damage?</Accordion.Control>
-          <Accordion.Panel>{placeholder}</Accordion.Panel>
+          <Accordion.Control>What types of raw minerals do you offer for sale?</Accordion.Control>
+          <Accordion.Panel>We offer a wide range of raw minerals, including gold, silver, red mercury, and diamonds.
+</Accordion.Panel>
         </Accordion.Item>
 
         <Accordion.Item className={classes.item} value="another-account">
@@ -24,18 +25,19 @@ export function FaqSimple() {
         </Accordion.Item>
 
         <Accordion.Item className={classes.item} value="newsletter">
-          <Accordion.Control>How can I subscribe to monthly newsletter?</Accordion.Control>
-          <Accordion.Panel>{placeholder}</Accordion.Panel>
+          <Accordion.Control>Are your minerals authentic and certified?</Accordion.Control>
+          <Accordion.Panel>Yes, all our minerals are guaranteed to be authentic, and many come with certification from reputable organizations.</Accordion.Panel>
         </Accordion.Item>
 
         <Accordion.Item className={classes.item} value="credit-card">
-          <Accordion.Control>Do you store credit card information securely?</Accordion.Control>
-          <Accordion.Panel>{placeholder}</Accordion.Panel>
+          <Accordion.Control>Can I purchase raw silver in various forms, such as bars or coins?</Accordion.Control>
+          <Accordion.Panel>Yes, we offer raw silver in various forms, including bars, coins, and other unique specimens.
+</Accordion.Panel>
         </Accordion.Item>
 
         <Accordion.Item className={classes.item} value="payment">
-          <Accordion.Control>What payment systems to you work with?</Accordion.Control>
-          <Accordion.Panel>{placeholder}</Accordion.Panel>
+          <Accordion.Control>Do you sell raw gold nuggets or refined gold bars?</Accordion.Control>
+          <Accordion.Panel>We offer both raw gold nuggets and refined gold bars, catering to different preferences and needs.</Accordion.Panel>
         </Accordion.Item>
       </Accordion>
     </Container>

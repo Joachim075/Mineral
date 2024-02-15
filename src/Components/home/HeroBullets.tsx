@@ -10,7 +10,7 @@ export function HeroBullets() {
     <div
       className={classes.root}
       style={{
-        backgroundImage: `url(${"https://i.pinimg.com/564x/69/ae/9d/69ae9ddef4631a407efe8de462a19d66.jpg"})`,
+        backgroundImage: `url(${"https://media.istockphoto.com/id/1134305610/photo/reflection-of-a-bubble-in-rainbow-colors-on-a-black-background.jpg?s=612x612&w=0&k=20&c=Yx0iAgpsyJYNPta9Z1UAX3Ytjv0Dotc-1ITfOjulY9w="})`,
       }}
     >
       <Container size="lg">
@@ -22,39 +22,37 @@ export function HeroBullets() {
                 component="span"
                 inherit
                 variant="gradient"
-                gradient={{ from: "blue", to: "blue" }}
-              >
-                Quality Medicare
+                gradient={{ from: "white", to: "gold" }}
+              >Contact.<br/>
+                Let's Talk Mineral.
               </Text>{" "}
-              to life for the whole family
+              
             </Title>
 
             <Text className={classes.description} mt={30}>
-              Say goodbye to waiting at hospitals to have consultation with your
-              doctor. <br /> Book the appointment in InstaMedi and get <br />{" "}
-              your doctor at your home to have consultation at your convenient
-              time.
+             
+
             </Text>
 
             <div className="flex justify-start mt-4 space-x-4">
               <div className="flex justify-start mt-4 space-x-4">
-                
+              <Link to="https://wa.me/15551234567" target="_blank">
                   <button
-                    className="bg-blue-500  text-white px-4 py-2 rounded-xl  "
-                    style={{ margin: "auto" }}
+                    className="bg-blue-500 fw-500 text-white px-4 py-2 rounded-xl  "
+                    style={{ margin: "auto", background: "black", border:"white 2px solid" }}
                   >
-                    <Booking/>
+                    Text us.
                   </button>
-                
+                </Link>
               </div>
 
               <div className="flex justify-start mt-4 space-x-4">
-                <Link to="/providers">
+                <Link to="tel:+123456789" target="_blank" >
                   <button
                     className="bg-blue-500  text-white px-4 py-2 rounded-xl  "
-                    style={{ margin: "auto" }}
+                    style={{ margin: "auto", background: "black", border:"white 2px solid" }}
                   >
-                    Contact Dr.
+                    Call Us.
                   </button>
                 </Link>
               </div>

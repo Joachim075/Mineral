@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container, Title, Text, Button } from '@mantine/core';
 import classes from './HeroImageRight.module.css';
 
@@ -7,16 +8,16 @@ export function HeroImageRight() {
       <Container size="lg">
         <div className={classes.inner}>
           <div className={classes.content}>
-            <Title className={classes.title}>
+            <Title style={{textAlign:'left'}} className={classes.title}>
               
-              Enjoy Convenient online medical services today
+            "Embrace Opulence: <br/>Indulge in Our Exquisite Collection"
             </Title>
 
-            <Text className={classes.description} mt={30}>
-            Escape the waiting room and connect with an online doctor, when and where it suits you. <br/>
-            InstaMedi doctors can provide a Number of different medical services and <br/>a dedicated to addressing your concerns from the comfort of your home.
-            </Text>
+            <Text style={{textAlign:'left'}} className={classes.description} mt={30}>
+            Embark on a Journey of Discovery:
+             Explore Our Exclusive Collection, Anytime, Anywhere</Text>
 
+             <Link to="/providers" target="_self" > 
             <Button
               variant="gradient"
               gradient={{ from: 'pink', to: 'yellow' }}
@@ -24,8 +25,8 @@ export function HeroImageRight() {
               className={classes.control}
               mt={40}
             >
-              Get started
-            </Button>
+              Contact Us.
+            </Button></Link>
           </div>
         </div>
       </Container>

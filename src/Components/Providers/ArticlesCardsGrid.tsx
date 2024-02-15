@@ -3,28 +3,28 @@ import classes from './ArticlesCardsGrid.module.css';
 
 const mockdata = [
   {
-    title: '"Beyond consultations, we connect you to a world of smiles and cutting-edge SERGERIES, ensuring your journey is seamless and comprehensive across various domains."',
+    title: '"Discover the brilliance of diamonds - natures most dazzling gemstone. Explore our exquisite collection of diamonds each a testament to timeless beauty and enduring elegance."',
     image:
-      'https://images.unsplash.com/photo-1684607633217-462056580c3c?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    date: 'Surgery Bookings',
+      'https://media.istockphoto.com/id/1578990284/photo/scattering-of-diamonds-of-various-cuts-on-a-white-background-exhibition-of-precious-stones-3d.webp?b=1&s=170667a&w=0&k=20&c=o5f_us2U2HrKX5PPxjf-Rd_jHw5CYJ6_u9OA-mCrMfE=',
+    date: 'Diamonds',
   },
   {
-    title: '"Embark on the future of healthcare with us: Virtual consultations, personalized meets, and a brighter, healthier world just a click away!"',
+    title: '"Indulge in the luxury of gold - the ultimate symbol of wealth, prestige, and beauty. Explore our stunning array of gold jewelry and accessories, crafted to perfection for those who appreciate the finer things in life."',
     image:
-      'https://media.istockphoto.com/id/1252880925/photo/african-doctor-in-video-conference-call-talking.jpg?s=612x612&w=0&k=20&c=-BvFAZC08GyE7J14h3hsEGYtMpQmLowBxQAqm09cbQE=',
-    date: 'Virtual Consultation and Examination',
+      'https://media.istockphoto.com/id/172434694/photo/gold-ingots.webp?s=170667a&w=0&k=20&c=6YC4gxrNF6VjC6y5gu-a5OfP9i2oPLkmokvLGK1od1o=',
+    date: 'Gold',
   },
   {
-    title: '"Unlocking a healthier tomorrow: Your health records at your fingertips, empowering you to take control of your well-being with ease and precision."',
+    title: '"Embrace the allure of silver - a precious metal steeped in history and versatility. From sleek modern designs to classic elegance, our silver collection offers something for every style."',
     image:
-      'https://media.istockphoto.com/id/1335050732/photo/businessman-using-a-computer-to-document-management-concept-online-documentation-database-and.jpg?s=612x612&w=0&k=20&c=5zAzuOclaBXMudc56RisW9yNyGxLt3wO8Xh2wtShmo0=',
-    date: 'Health Records ',
+      'https://media.istockphoto.com/id/1403979478/photo/stack-of-shiny-silver-bars-ingots-and-coins.jpg?s=612x612&w=0&k=20&c=XsIA7Cb2BaVhgdMHaaEiJIaTOLTNwnh6JafDHH1atag=',
+    date: 'Silver ',
   },
   {
-    title: '"Manage prescriptions, access health resources, and receive medications through secure and user-friendly online platforms"',
+    title: '"Uncover the mystique of red mercury - a rare and enigmatic substance that captivates with its mysterious allure. Dive into our exclusive selection and experience the magic of this elusive element."',
     image:
-      'https://media.istockphoto.com/id/1325914413/photo/portrait-of-professional-black-male-pharmacist-holding-box-with-best-deal-face-masks-looking.jpg?s=612x612&w=0&k=20&c=GrNAANdZ66raAwbCF3vQ3A1vfk1sGuKOXV4DnnWgbDY=',
-    date: 'Online Pharmacy',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqHrY4n8-JmjVgkG_v6aUvYjTux9p2Q9Yyaw&usqp=CAU',
+    date: 'Red Mercury',
   },
 ];
 
@@ -34,7 +34,7 @@ export function ArticlesCardsGrid() {
       <AspectRatio ratio={1920 / 1080}>
         <Image src={article.image} />
       </AspectRatio>
-      <Text c="dimmed" size="xs" tt="uppercase" fw={700} mt="md">
+      <Text c="dimmed" size="xl" tt="uppercase" fw={700} mt="md">
         {article.date}
       </Text>
       <Text className={classes.title} mt={5}>

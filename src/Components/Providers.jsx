@@ -1,12 +1,22 @@
 import React from "react";
 import { UsersRolesTable } from "./Providers/UsersRolesTable";
 import { HeroBullets2 } from "./Providers/HeroBullets2";
+import { FeaturesTitle } from "./home/FeaturesTitle";
+import { LeadGrid } from "./home/LeadGrid";
+import { TableReviews } from "./service/TableReviews";
+import { FaqWithHeader } from "./home/FaqWithHeader";
+import { FooterSocial } from "./FooterSocial";
 
 function Providers() {
     return (
         <>
         <HeroBullets2 />
-        <UsersRolesTable/>
+        <LeadGrid/>
+        <FeaturesTitle/>
+        <TableReviews/>
+        <FaqWithHeader/>
+
+      
         </>
     );
 }
