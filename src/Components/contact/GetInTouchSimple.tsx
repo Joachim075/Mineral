@@ -18,7 +18,7 @@ export function GetInTouchSimple() {
 
   return (
     <> 
-    <div tyle={{  margin: '0 auto',margin: '0px' }}>
+    <div tyle={{  margin: '0 auto' }}>
     <form onSubmit={form.onSubmit(() => {})}>
       <Title
         order={2}
