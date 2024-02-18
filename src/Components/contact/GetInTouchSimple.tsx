@@ -1,5 +1,6 @@
 import { TextInput, Textarea, SimpleGrid, Group, Title, Button } from '@mantine/core';
 import { useForm } from '@mantine/form';
+import React from 'react';
 
 export function GetInTouchSimple() {
   const form = useForm({
@@ -18,7 +19,7 @@ export function GetInTouchSimple() {
 
   return (
     <> 
-    <div tyle={{  margin: '0 auto' }}>
+    <div style={{  margin: '0 auto' }}>
     <form onSubmit={form.onSubmit(() => {})}>
       <Title
         order={2}
